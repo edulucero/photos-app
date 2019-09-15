@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 export default function CuratedSwitch({handleCuratedSwitch, curated}) {
   return(
     <div className="row">
@@ -10,4 +10,9 @@ export default function CuratedSwitch({handleCuratedSwitch, curated}) {
       </label>
     </div>
   )
+}
+
+CuratedSwitch.propTypes = {
+  handleCuratedSwitch: PropTypes.func.isRequired,
+  curated: PropTypes.bool.isRequired
 }

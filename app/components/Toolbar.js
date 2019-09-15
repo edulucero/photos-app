@@ -1,6 +1,7 @@
 import React from 'react'
 import Zoom from './Zoom'
 import CuratedSwitch from './CuratedSwitch'
+import PropTypes from 'prop-types'
 
 export default function Toolbar({ handleSizeIncrease, handleSizeDecrease, handleReset, handleCuratedSwitch, curated }) {
   return(
@@ -13,4 +14,12 @@ export default function Toolbar({ handleSizeIncrease, handleSizeDecrease, handle
       />
     </div>
   )
+}
+
+Toolbar.propTypes = {
+  handleSizeIncrease: PropTypes.func.isRequired,
+  handleSizeDecrease: PropTypes.func.isRequired,
+  handleReset: PropTypes.func.isRequired,
+  handleCuratedSwitch: PropTypes.func,
+  curated: PropTypes.bool
 }

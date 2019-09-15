@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-function User({user}) {
+export default function User({user}) {
   const { username, bio, profile_image, location, links} = user
 
   return(
@@ -21,4 +22,10 @@ function User({user}) {
   )
 }
 
-export default User
+User.propTypes = {
+  username: PropTypes.string,
+  bio: PropTypes.string,
+  profile_img: PropTypes.string,
+  location: PropTypes.string,
+  links: PropTypes.string
+}

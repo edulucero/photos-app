@@ -103,7 +103,6 @@ export default class Results extends React.Component {
   }
 
   setImgSize = (imgs, size) => {
-    console.log('triggered')
     imgs.forEach((img) => {
       img.style.width = size + "px"
       img.style.height = size + "px"

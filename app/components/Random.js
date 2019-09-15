@@ -2,6 +2,7 @@ import React from 'react'
 import { fetchRandom } from '../utils/api'
 import Loading from './Loading'
 import User from './User'
+import PropTypes from 'prop-types'
 
 function View ({ img, updateImg }) {
   return(
@@ -27,6 +28,11 @@ function View ({ img, updateImg }) {
       </div>
     </div>   
   )
+}
+
+View.propTypes = {
+  img: PropTypes.object.isRequired,
+  updateImg: PropTypes.func.isRequired
 }
 
 export default class Random extends React.Component {

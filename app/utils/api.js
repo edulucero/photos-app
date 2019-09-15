@@ -9,7 +9,6 @@ export function fetchPhotos(type, page, curated) {
     if (data.errors) {
       throw new Error(data.errors)
     }
-    console.log('false')
     return data
   }))
   } else {
@@ -19,7 +18,6 @@ export function fetchPhotos(type, page, curated) {
     if (data.errors) {
       throw new Error(data.errors)
     }
-    console.log('true')
     return data
   }))
   }

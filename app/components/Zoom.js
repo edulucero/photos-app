@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export default class Nav extends React.Component {
+export default class Zoom extends React.Component {
 
   state = {
     size: this.props.size
@@ -14,5 +15,11 @@ export default class Nav extends React.Component {
       </div>
     )
   }
+}
+
+Zoom.propTypes = {
+  handleSizeIncrease: PropTypes.func.isRequired,
+  handleSizeDecrease: PropTypes.func.isRequired,
+  handleReset: PropTypes.func.isRequired
 }
 

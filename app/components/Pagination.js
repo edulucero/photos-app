@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const activeStyle = {
   // textDecoration: "underline",
@@ -19,4 +20,10 @@ export default function Pagination({pages, page, fetch}) {
       </ul>
     </div>
   )
+}
+
+Pagination.propTypes = {
+  pages: PropTypes.array.isRequired,
+  page: PropTypes.number.isRequired,
+  fetch: PropTypes.func.isRequired
 }

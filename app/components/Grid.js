@@ -4,6 +4,7 @@ import Loading from './Loading'
 import Toolbar from './Toolbar'
 import Pagination from './Pagination'
 import User from './User'
+import PropTypes from 'prop-types'
 
 export default class Grid extends React.Component {
   state = {
@@ -95,7 +96,6 @@ export default class Grid extends React.Component {
   }
 
   setImgSize = (imgs, size) => {
-    console.log('triggered')
     imgs.forEach((img) => {
       img.style.width = size + "px"
       img.style.height = size + "px"
@@ -122,12 +122,6 @@ export default class Grid extends React.Component {
         curated: false
       })
     }
-  }
-
-  handleModal = (img) => {
-    const { urls, user} = img
-    const { url } = urls.full
-    console.log(user)
   }
 
   render () {
