@@ -11,7 +11,7 @@ export default function Footer() {
                 Developed By Eduardo Lucero
               </li>
               <li className="underline">
-                More Info
+                <a href="edulucero.com">More Info</a>
               </li>
             </ul>
           </div>

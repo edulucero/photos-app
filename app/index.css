@@ -118,7 +118,7 @@ nav ul li:nth-child(1) {
 .search-bar {
   height: 2rem;
   width: 18rem;
-  border-radius: 2px;
+  border-radius: 5px;
   border: 1px solid grey;
   padding: 15px;
   box-shadow: none;
@@ -161,7 +161,7 @@ button {
   height: 2rem;
   width: 4.5rem;
   font-size: 0.75rem;
-  border-radius: 2px;
+  border-radius: 5px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   border: 1px solid grey;
@@ -283,7 +283,7 @@ button {
   content: "";
   top: 3px;
   background-color: white;
-  transition: 5s;
+  transition: 0.5s;
 }
 
 .switch input {
@@ -336,6 +336,7 @@ footer {
 
 .footer-list-wrapper li {
   margin-right: 15px;
+  color: rgba(255, 255, 255, 0.835);
 }
 
 .underline {
